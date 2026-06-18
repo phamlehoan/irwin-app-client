@@ -1,0 +1,87 @@
+.ad-md-editor-shell {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  .md-editor {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    border: none;
+  }
+
+  .md-editor-toolbar-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    flex-shrink: 0;
+  }
+
+  .md-editor-toolbar {
+    width: max-content;
+    min-width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .md-editor-content {
+    flex: 1 1 auto !important;
+    min-height: 0;
+  }
+
+  .md-editor-content-wrapper {
+    min-width: 0;
+  }
+
+  .md-editor-input-wrapper,
+  .md-editor-preview-wrapper {
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .cm-editor,
+  .cm-scroller {
+    min-height: 100%;
+  }
+}
+
+/**
+ * Mobile: preview=false mặc định (chỉ vùng soạn).
+ * Khi bấm Preview trên toolbar: xếp dọc, ép full width (override inline 50% của thư viện).
+ */
+.ad-md-editor-shell--single {
+  .md-editor-content {
+    flex-direction: column !important;
+  }
+
+  .md-editor-content-wrapper {
+    width: 100% !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+  }
+
+  .md-editor-input-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 auto !important;
+    min-height: 160px !important;
+    height: auto !important;
+  }
+
+  .md-editor-preview-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    inset-inline-start: 0 !important;
+    flex: 1 1 auto !important;
+    min-height: 120px !important;
+    border-top: 1px solid var(--md-border-color, #e6e6e6);
+  }
+
+  .md-editor-resize-operate {
+    display: none !important;
+  }
+}

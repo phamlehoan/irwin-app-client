@@ -1,0 +1,21 @@
+// Brand Áng Dương — ưu tiên: xanh dương > xanh lá > đỏ (ít chỗ)
+$ad-blue: #1565c0;
+$ad-blue-dark: #0d47a1;
+$ad-green: #7ac141;
+$ad-green-dark: #5a9634;
+$ad-danger: #d93d35;
+$ad-sidebar-bg: #0f172a;
+$ad-sidebar-bg-elevated: #1e293b;
+$ad-sidebar-text: #94a3b8;
+$ad-page-bg: #f0f2f5;
+$ad-topbar-border: #e3e6f0;
+
+:root {
+  --ad-blue: #{$ad-blue};
+  --ad-blue-dark: #{$ad-blue-dark};
+  --ad-green: #{$ad-green};
+  --ad-green-dark: #{$ad-green-dark};
+  --ad-danger: #{$ad-danger};
+  --ad-sidebar-bg: #{$ad-sidebar-bg};
+  --ad-page-bg: #{$ad-page-bg};
+}

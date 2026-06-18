@@ -1,0 +1,15 @@
+{
+  "name": "warehouse-app-client",
+  "version": "0.0.1",
+  "description": "A smart app to manage number of weight in warehouses.",
+  "author": "Hoan Pham <hoan_pham@datahouse.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "@capacitor/push-notifications": "^8.0.3"
+  }
+}

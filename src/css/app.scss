@@ -1,0 +1,39 @@
+// Font chữ phù hợp tiếng Việt (Latin + dấu). Roboto đã tắt trong quasar.config extras.
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import 'brand';
+
+html,
+body,
+#q-app,
+.q-body {
+  font-family:
+    'Be Vietnam Pro',
+    'Segoe UI',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+// Trang auth (login, quên MK, …)
+.auth-page-bg {
+  min-height: 100vh;
+  background: linear-gradient(
+    160deg,
+    $ad-blue-dark 0%,
+    $ad-blue 45%,
+    #e3f2fd 100%
+  );
+}
+
+.ad-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ad-page-header {
+  padding-top: 4px;
+}
+
+@import 'ad-ui';
+@import 'md-editor-shell';

@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "types": ["node", "@quasar/app-vite"]
+  },
+  "extends": "./.quasar/tsconfig.json"
+}
